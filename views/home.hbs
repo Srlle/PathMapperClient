@@ -144,7 +144,7 @@
 
         <span class="distance-label">Completed</span>
         <div class="progress-radial progress-10" id="progress">
-          <div class="overlay" id="perc">{{pathPerc}} %</div>
+          <div class="overlay" id="perc">{{pathPerc}}</div>
         </div>
       </div>
 
@@ -216,7 +216,7 @@
           pathPerc = pathPerc.toFixed(2)
           document.getElementById("distance").innerHTML = pathLength;
           document.getElementById("perc").innerHTML = pathPerc +'%';
-          document.getElementById("progress").setAttribute("class", "progress-radial progress-"+ Math.round(pathPerc/5)*5); 
+          document.getElementById("progress").setAttribute("class", "progress-radial progress-"+ Math.round(pathPerc/5)*5);
         }
 
         NYMRoute.setMap(map);
